@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Drag and Drop Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="header-time-container">
+            <span id="live-time">--:--:--</span>
+            <button id="time-button">Settings</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="emoji-drawer" class="emoji-drawer">
+            <div class="drawer-header">
+                <h2>Select Emoji</h2>
+                <span id="close-drawer" class="close-button">&times;</span>
+            </div>
+            <div class="drawer-tabs">
+                <button class="tab-button active" data-category="smileys">Smileys</button>
+                <button class="tab-button" data-category="activities">Activities</button>
+                <button class="tab-button" data-category="food">Food</button>
+            </div>
+            <div class="drawer-body">
+                <div id="emoji-grid" class="emoji-grid"></div>
+            </div>
+        </div>
+
+        <button id="open-drawer-button" class="drawer-toggle-button">😊</button>
+
+        <div class="timeline" id="timeline"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
